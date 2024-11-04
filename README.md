@@ -1,0 +1,2 @@
+# streamEx
+stream practice exaples
