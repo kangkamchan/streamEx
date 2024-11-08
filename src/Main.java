@@ -1,4 +1,6 @@
 import java.util.*;
+import java.util.stream.Collectors;
+
 public class Main {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(3, 4, 7, 8, 10, 15, 18);
@@ -13,5 +15,15 @@ public class Main {
                 new Person("Charlie", 25)
         )));
         System.out.println(StreamEx.sortAscDistinct(Arrays.asList(5, 3, 8, 3, 9, 1, 5, 7)));
+        System.out.println(StreamEx.getMostFrequent(Arrays.asList("apple", "banana", "apple", "orange", "banana", "apple")));
+        System.out.println(StreamEx.intersectionOfList(Arrays.asList(1, 2, 3, 4, 5),Arrays.asList(4, 5, 6, 7, 8)));
+
+
+        List<Map<String, Integer>> maps = Arrays.asList(
+                Map.of("A", 3, "B", 5),
+                Map.of("A", 2, "C", 4),
+                Map.of("B", 3, "C", 7)
+        );
+        
     }
 }
